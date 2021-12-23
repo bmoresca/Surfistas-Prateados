@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		20664DAC2774E0AD00164918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20664DAB2774E0AD00164918 /* AppDelegate.swift */; };
 		20664DAE2774E0AD00164918 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20664DAD2774E0AD00164918 /* SceneDelegate.swift */; };
-		20664DB02774E0AD00164918 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20664DAF2774E0AD00164918 /* ViewController.swift */; };
+		20664DB02774E0AD00164918 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20664DAF2774E0AD00164918 /* WeatherViewController.swift */; };
 		20664DB32774E0AD00164918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20664DB12774E0AD00164918 /* Main.storyboard */; };
 		20664DB62774E0AD00164918 /* Surfistas_Prateados.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20664DB42774E0AD00164918 /* Surfistas_Prateados.xcdatamodeld */; };
 		20664DB82774E0AF00164918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20664DB72774E0AF00164918 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		20664DA82774E0AD00164918 /* Surfistas Prateados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Surfistas Prateados.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20664DAB2774E0AD00164918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20664DAD2774E0AD00164918 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20664DAF2774E0AD00164918 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20664DAF2774E0AD00164918 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		20664DB22774E0AD00164918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20664DB52774E0AD00164918 /* Surfistas_Prateados.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Surfistas_Prateados.xcdatamodel; sourceTree = "<group>"; };
 		20664DB72774E0AF00164918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,14 +60,38 @@
 			children = (
 				20664DAB2774E0AD00164918 /* AppDelegate.swift */,
 				20664DAD2774E0AD00164918 /* SceneDelegate.swift */,
-				20664DAF2774E0AD00164918 /* ViewController.swift */,
-				20664DB12774E0AD00164918 /* Main.storyboard */,
+				20664DC22774E10C00164918 /* Model */,
+				20664DC32774E11300164918 /* View */,
+				20664DC42774E11900164918 /* Controller */,
 				20664DB72774E0AF00164918 /* Assets.xcassets */,
 				20664DB92774E0AF00164918 /* LaunchScreen.storyboard */,
 				20664DBC2774E0AF00164918 /* Info.plist */,
 				20664DB42774E0AD00164918 /* Surfistas_Prateados.xcdatamodeld */,
 			);
 			path = "Surfistas Prateados";
+			sourceTree = "<group>";
+		};
+		20664DC22774E10C00164918 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20664DC32774E11300164918 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20664DB12774E0AD00164918 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20664DC42774E11900164918 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20664DAF2774E0AD00164918 /* WeatherViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20664DB62774E0AD00164918 /* Surfistas_Prateados.xcdatamodeld in Sources */,
-				20664DB02774E0AD00164918 /* ViewController.swift in Sources */,
+				20664DB02774E0AD00164918 /* WeatherViewController.swift in Sources */,
 				20664DAC2774E0AD00164918 /* AppDelegate.swift in Sources */,
 				20664DAE2774E0AD00164918 /* SceneDelegate.swift in Sources */,
 			);
