@@ -59,7 +59,19 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
     }
     
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
-        print(weather.windCoordinate)
+        DispatchQueue.main.async {
+            self.temperatureLabel.text = weather.temperatureString
+            self.conditionImageView.image = UIImage(systemName: weather.conditionName)
+            self.cityLabel.text = weather.cityName
+            self.latitudeLabel.text = weather.latString
+            self.longitudeLabel.text = weather.longString
+            self.minTemperatureLabel.text = weather.minTemperatureString
+            self.maxTeperatureLabel.text = weather.maxTemperatureString
+            self.pressureLabel.text = weather.pressureString
+            self.humidityLabel.text = weather.humidityString
+            self.windSpeedLabel.text = weather.windSpeedString
+            self.windDirectionLabel.text = weather.windCoordinate
+        }
     }
     
     func didFailwithError(error: Error) {

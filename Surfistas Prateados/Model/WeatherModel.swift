@@ -43,12 +43,37 @@ struct WeatherModel {
     
     var windCoordinate: String {
 
-        let coordinates = ["NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW", "N"]
+        let coordinates = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW", "N"]
         let string = Double(windDirection)/22.5
         
         let n = Int(string)
         
-        return coordinates[n-1]
+        return coordinates[n]
     }
     
+    var temperatureString: String {
+        return String(format: "%.0f", temperature)
+    }
+    
+    var minTemperatureString: String{
+        return String(format: "%0.f", minTemperature)
+    }
+    var maxTemperatureString: String {
+        return String(format: "%0.f", minTemperature)
+    }
+    var latString: String {
+        return String(latitude)
+    }
+    var longString: String {
+        return String(longitude)
+    }
+    var pressureString: String {
+        return String(airPressure)
+    }
+    var humidityString: String {
+        return String(airHumidity)
+    }
+    var windSpeedString: String {
+        return String(windSpeed)
+    }
 }
