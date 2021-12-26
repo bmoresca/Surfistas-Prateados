@@ -56,10 +56,10 @@ struct WeatherModel {
     }
     
     var minTemperatureString: String{
-        return String(format: "%0.f", minTemperature)
+        return String(format: "%.0f", minTemperature)
     }
     var maxTemperatureString: String {
-        return String(format: "%0.f", minTemperature)
+        return String(format: "%.0f", maxTemperature)
     }
     var latString: String {
         return String(latitude)
