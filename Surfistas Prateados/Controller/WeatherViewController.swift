@@ -38,6 +38,9 @@ class WeatherViewController: UIViewController {
         searchTextField.delegate = self
         
     }
+    @IBAction func locationPressed(_ sender: UIButton) {
+        locationManager.requestLocation()
+    }
 }
 
 //MARK: - UITextFieldDelegate
@@ -103,10 +106,11 @@ extension WeatherViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last{
+            locationManager.stopUpdatingLocation()
             let locationLat = location.coordinate.latitude
             let locationLon = location.coordinate.longitude
-            print(locationLat)
-            print(locationLon)
+            
+            weatherManager.fetchWeather(latitude:locationLat, longitude:locationLon)
         }
     }
     
