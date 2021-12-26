@@ -95,7 +95,7 @@ extension WeatherViewController: WeatherManagerDelegate {
     
     func didFailwithError(error: Error) {
         //Add alert for the user!
-        print(error)
+        print("algo de erraco conteceu")
     }
     
 }
